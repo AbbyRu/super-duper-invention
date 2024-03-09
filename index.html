@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <link rel="stylesheet" href="styles.css">
           <meta charset="UTF-8"> 
           <meta name="viewport" content="width=device-width", initial-scale=1.0>
           <meta name="author" content="Abigael Amuruon">
@@ -8,68 +9,59 @@
           <title>Form With Semantic HTML</title>
           <style>
             /* Styles */
-            body{
-                font-family: Arial, sans-serif;
-                margin: 20px;
-                border-style: hidden;
-                color: aquamarine;
-                background-color:black ;
-            }
-            form{
-               
-                margin-bottom:10%;
-                border-style: none;
+            
 
-            }
-            label{
-                display:block;
-                margin-bottom:8px;
-            }
-            input,
-            select,
-            textarea {
-                padding: 10px;
-                margin-bottom: 16px;
-                color:blue
-            }
-
-</style>
+            </style>
     </head>
 
     <body>
+        <header>
         <h1>Form With Semantic HTML</h1>
-    <form>  
-        <fieldset>
-            <legend>Fill the form below</Legend>
-            <label for="fullName">Full Name</label>
-            <input class="text" id="fullName" name="fullName" placeholder="enter your name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            <label for="gender">Gender</label>
-            <select id="gender" name="gender">
-                <option value='Select'>Select</option>
-                <option value='Male'>Male</option>
-                <option value='Female'>Female</option>                
-                <option value="other">Other</option>
-            </select>
-        </fieldset>
+        </header>
+        <div class="container">
+            <main>
+                <form>  
+                    <fieldset>
+                        <legend>Fill the form below</Legend>
+                        <label for="fullName">Full Name</label>
+                        <input class="text" id="fullName" name="fullName" placeholder="enter your name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="enter your email" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="enter password" required>
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value='Select'>Select</option>
+                            <option value='Male'>Male</option>
+                            <option value='Female'>Female</option>                
+                            <option value="other">Other</option>
+                        </select>
+                    </fieldset>
 
-        <fieldset>
-            <legend>Newsletter</legend>
-            <label for="newsletter">Subscribe to Newsletter:</label>
-            <input type="checkbox" id="newsletter" name="newsletter">
-        </fieldset>
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <label for="newsletter">Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </fieldset>
 
-        <fieldset>
-            <legend>Other</legend>
-            <label for="comments">Comments</label>
-            <textarea id="comments" rows="4"></textarea>
-            <button type="submit">Submit</button>
-        </fieldset>
+                    <fieldset>
+                        <legend>Other</legend>
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" rows="4"></textarea>
+                        <button type="submit">Submit</button>
+                    </fieldset>
 
-    </form>
+                </form>
+            </main>
+            <aside>
+                <h1><em>sheriff and abigael</em></h1>
+                <h2><em>programming lesson 4</em></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem alias illum rerum, voluptates vel labore. Animi nostrum repellendus vero nobis fuga quisquam, excepturi omnis ea dolor magni, numquam asperiores aspernatur!</p>
+                
+            </aside>
 
+
+        </div>
+        <footer>IYF season 5</footer>
     </body>
 </html>
